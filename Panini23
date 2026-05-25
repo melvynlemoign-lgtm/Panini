@@ -49,19 +49,29 @@ export default function PaniniMarketplace() {
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-4 py-12">
-        <div className="bg-gradient-to-r from-black to-gray-800 rounded-3xl text-white p-10">
-          <h2 className="text-5xl font-bold mb-4">
-            Le Vinted des cartes Panini
-          </h2>
+        <div
+          className="rounded-3xl text-white p-10 bg-cover bg-center relative overflow-hidden"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1600&auto=format&fit=crop')",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/70"></div>
 
-          <p className="text-lg text-gray-300 max-w-2xl">
-            Achetez et vendez vos cartes Panini, Pokémon, NBA et cartes rares
-            entre collectionneurs.
-          </p>
+          <div className="relative z-10">
+            <h2 className="text-5xl font-bold mb-4">
+              Le Vinted des cartes Panini
+            </h2>
 
-          <button className="mt-6 bg-white text-black px-6 py-3 rounded-2xl font-semibold">
-            Explorer les cartes
-          </button>
+            <p className="text-lg text-gray-200 max-w-2xl">
+              Marketplace inspirée de la Coupe du Monde 2026 pour acheter et
+              vendre des cartes Panini rares entre collectionneurs.
+            </p>
+
+            <button className="mt-6 bg-white text-black px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition">
+              Explorer les cartes
+            </button>
+          </div>
         </div>
       </section>
 
